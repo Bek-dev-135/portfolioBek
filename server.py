@@ -1,6 +1,8 @@
 from flask import Flask, render_template, url_for, request, redirect
 import csv
 import mysql.connector as mysql
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 
 
 import sys
@@ -9,7 +11,8 @@ app = Flask(__name__)
 
 db= mysql.connect(host="localhost", user="root", password="",database="college")
 command_handler = db.cursor(buffered=True)
-
+# db= mysql.connect(host="BereketeabAbebe.mysql.pythonanywhere-services.com", user="BereketeabAbebe", password="BekisgoingtoHost",database="BereketeabAbebe$Contacts")
+# command_handler = db.cursor(buffered=True)
 
 @app.route("/")
 def my_home():
@@ -32,6 +35,8 @@ def write_to_db(data):
     email=data["email"]
     subject= data["subject"]
     message=data["message"]
+
+   
     csv_data=([email,subject,message])
     
     command_handler.execute("INSERT INTO users(email,subject,message) VALUES(%s,%s,%s)", csv_data)
