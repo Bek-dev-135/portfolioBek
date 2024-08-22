@@ -24,7 +24,7 @@ command_handler = db.cursor(buffered=True)
 db_config = {
         "host":"BereketeabAbebe.mysql.pythonanywhere-services.com",
         "user":"BereketeabAbebe",
-        "password":"BekisgoingtoHost",
+        "password":"",
         "database":"BereketeabAbebe$Contacts"
         }
 
