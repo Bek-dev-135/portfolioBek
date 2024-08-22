@@ -1,0 +1,55 @@
+_HiStOrY_V2_
+source\040/home/BereketeabAbebe//databases/users.sql
+quit
+source\040/home/BereketeabAbebe/databases/Users.sql
+source\040/home/BereketeabAbebe/databases/users.sql
+quit
+mysql\040–u username –p
+BekisgoingtoHost
+quit
+CREATE\040TABLE\040employees
+(\040
+employees_id\040int\040NOT\040NULL\040AUTO_INCREMENT,\040
+ident_prac,\040
+name ,
+address,
+ident_zesp ,
+PRIMARY\040KEY\040(employees)\040
+)\040ENGINE=InnoDB;
+CREATE\040TABLE\040employees\040(\040\040employees_id\040int\040NOT\040NULL\040AUTO_INCREMENT,\040\040ident_prac,\040\040name ,\040address,\040ident_zesp ,\040PRIMARY\040KEY\040(employees)\040\040)\040ENGINE=InnoDB;
+CREATE\040TABLE\040employees\040(\040\040employees_id\040int\040NOT\040NULL\040AUTO_INCREMENT,\040\040ident_prac,\040\040name,\040address,\040ident_zesp ,\040PRIMARY\040KEY\040(employees)\040\040)\040ENGINE=InnoDB;
+CREATE\040databse\040employees;
+CREATE\040database\040employees;
+\040\040\040\040->\040)\040ENGINE=InnoDB;
+mysql\040–u username –p
+mysql\040–u username –p;
+mysql\040–u BereketeabAbebe –p
+BekisgoingtoHost
+SHOW\040TABLE;
+CREATE\040TABLE\040table_name\040(
+\040\040\040\040column1\040datatype,
+\040\040\040\040column2\040datatype,
+\040\040\040\040column3\040datatype,
+\040\040\040....
+);\040
+CREATE\040TABLE\040table_name\040(\040\040\040\040\040column1\040datatype,\040\040\040\040\040column2\040datatype,\040\040\040\040\040column3\040datatype,\040\040\040\040....\040);
+DROP\040DATABASE\040lab1;
+mysql\040-u\040BereketeabAbebe\040\040-h\040BereketeabAbebe.mysql.pythonanywhere-services.com\040-p
+BekisgoingtoHost
+list\040tables;
+LIST\040TABLES;
+sELECT\040*\040FROM\040TABLES;
+mysql\040-u\040your_username\040-p
+;
+mysql\040-u\040root\040-p
+;
+SHOW\040TABLES;
+SELECT\040*\040FROM\040People;
+SELECT\040*\040FROM\040users;
+mysql>\040
+;
+mysql>\040\040\040mysql>;
+TRUNCATE\040TABLE\040users;
+SELECT\040*\040FROM\040users;
+TRUNCATE\040TABLE\040users;
+exit
