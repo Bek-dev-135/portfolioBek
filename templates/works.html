@@ -2,228 +2,402 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="description">
-  <meta name="google" content="notranslate" />
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate" />
+    <title>Professional Works and Certifications</title>
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
-  <link href="./static/assets/favicon.ico" rel="icon">
+    <!-- Load Tailwind CSS CDN - All styling relies on this -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-  <title>Title page</title>  
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+        }
 
-<link href="./static/main.3f6952e4.css" rel="stylesheet"></head>
+        /* Custom styles for professional card design */
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-<body class="">
-<div id="site-border-left"></div>
-<div id="site-border-right"></div>
-<div id="site-border-top"></div>
-<div id="site-border-bottom"></div>
- <!-- Add your content of header -->
-<header>
-  <nav class="navbar  navbar-fixed-top navbar-default">
-    <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+        .card-shadow:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
 
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-          <li><a href="./index.html" title="">01 : Home</a></li>
-          <li><a href="./works.html" title="">02 : Works</a></li>
-          <li><a href="./about.html" title="">03 : About me</a></li>
-          <li><a href="./contact.html" title="">04 : Contact</a></li>
-          
-        </ul>
+        /* Swiper pagination active color */
+        .swiper-pagination-bullet-active {
+            background-color: #10b981 !important;
+            /* Tailwind emerald-500 */
+        }
 
+        /* Custom styles for the old template structure */
+        .section-container-spacer {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
 
-      </div> 
-    </div>
-  </nav>
-</header>
+        /* Ensure Swiper container does not inherit massive padding/margin */
+        .swiper {
+            width: 100%;
+            /* Use full width of parent container */
+            height: auto;
+        }
+    </style>
+    <!-- Load Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
 
-<div class="section-container">
-  <div class="container">
-    <div class="row">
-      
-      <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
-        <div class="text-center">
-          <h1 class="h2">02 : Works</h1>
-          <p>I am currently working as an Excutive Assistant at McKinsey & Company. I wanted to move out of the tech world and develop my time managment, big corporate work ethics, problem solving skills which at the start of my work were a bit of a struggle but I could see my self developing into it. Also this field gives me a lot of mental space for me to persue my education on the side.
-          <br>I have worked with python for the past three years learning on my skills mainy on backend development, but I have practiced in Front end languages like HTML, CSS, and Javascript on the side to be fully equipped with the current market.
-          <br>While my work in Majorel as an outsource customer support for Microsoft Azure I have developed a fondness to the areas of cloud computing and participated in three Microsoft based certifications which I will link below. 
-        
-
-      </p>
-        </div>
-        <div class="text-center">
-          <h3 >Proffesional CV
-          </h3>
-          <p>
-          <a href="/static/assets/Bereketeab-cv.pdf"" >
-                      Open PDF file
-                      </a>
-                    </p>
-        </div>
-      </div>
-
-      <div class="col-md-12">
-     
-      <div id="myCarousel" class="carousel slide projects-carousel">
-        <!-- Carousel items -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="row">
-                    <div class="col-sm-4">
-
-                      <a href="./work.html" title="" class="black-image-project-hover">
-                        <img src="./static/assets/images/work01-hover.jpg" alt="" class="img-responsive">
-                      </a>
-                      
-                      <div class="card-container card-container-lg">
-                        <h4>001/006</h4>
-                        <h3>Microsoft Certified: Azure Fundamentals</h3>
-                        <h4>Issued by <a href="https://www.credly.com/org/microsoft-certification">Microsoft</a></h4>
-                        <img src="./static/assets/azure-fundamentals-600x600.png" width ="150px">
-                        <p>
-Earners of the Azure Fundamentals certification have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure.</p>
-                        <a href="https://www.credly.com/badges/9de23c50-a147-4290-97fb-c929cc52bda1/public_url" title="" class="btn btn-default">Discover</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <a href="./work.html" title="" class="black-image-project-hover">
-                        <img src="./static/assets/images/work02-hover.jpg" alt="" class="img-responsive">
-                      </a>
-                      <div class="card-container card-container-lg">
-                        <h4>002/006</h4>
-                        <h3>Microsoft Certified: Security, Compliance, and Identity Fundamentals</h3>
-                        <h4>Issued by <a href="https://www.credly.com/org/microsoft-certification">Microsoft</a></h4>
-                        <img src="./static/assets/security-compliance-and-identity-fundamentals-600x600.png" width ="150px">
-                        <p>Earners of the Security, Compliance, and Identity Fundamentals demonstrate a functional understanding of security, compliance, and identity (SCI) across cloud-based and related Microsoft services.</p>
-                        <a href="https://www.credly.com/badges/f1b8f0d9-4627-4253-87d1-9add4f0c8ea1/public_url" title="" class="btn btn-default">Discover</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <a href="./work.html" title="" class="black-image-project-hover">
-                        <img src="./static/assets/images/work03-hover.jpg" alt="" class="img-responsive">
-                      </a>
-                      <div class="card-container card-container-lg">
-                        <h4>003/006</h4>
-                        <h3>Microsoft Certified: Azure AI Fundamentals</h3>
-                         <h4>Issued by <a href="https://www.credly.com/org/microsoft-certification">Microsoft</a></h4>
-                         <img src="./static/assets/azure-ai-fundamentals-600x600.png" width ="150px">
-                        <p>Earners of the Azure AI Fundamentals certification have demonstrated foundational knowledge of machine learning (ML) and artificial intelligence (AI) concepts and related Microsoft Azure services.</p>
-                        <a href="https://www.credly.com/badges/0fa1518b-b530-455b-be8a-85cc422666c8/public_url" title="" class="btn btn-default">Discover</a>
-                      </div>
-                    </div>
-                    
+<body class="min-h-screen">
+    <!-- Header (Modernized with Tailwind) -->
+    <header class="bg-white shadow-md sticky top-0 z-20">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center h-16">
+                <div class="flex items-center">
+                    <!-- Navigation Menu -->
+                    <ul id="navbar-collapse" class="flex space-x-6 text-sm font-medium">
+                        <li><a href="./index.html" title=""
+                                class="text-gray-500 hover:text-indigo-600 transition duration-150">01 : Home</a></li>
+                        <li><a href="./works.html" title=""
+                                class="text-indigo-600 border-b-2 border-indigo-600 pb-1">02 : Works</a></li>
+                        <li><a href="./work.html" title=""
+                                class="text-gray-500 hover:text-indigo-600 transition duration-150">03 : Certifications</a>
+                        </li>
+                        <li><a href="./about.html" title=""
+                                class="text-gray-500 hover:text-indigo-600 transition duration-150">04 : About me</a>
+                        </li>
+                        <li><a href="./contact.html" title=""
+                                class="text-gray-500 hover:text-indigo-600 transition duration-150">05 : Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <!--/row-->
             </div>
-            <!--/item-->
-            <div class="item">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <a href="./work.html" class="black-image-project-hover">
-                      <img src="./static/assets/images/work02-hover.jpg" alt="Image" class="img-responsive">
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <!-- The main constraint (max-w-7xl) is applied here, fixing the stretching issue. -->
+    <div class="section-container pt-12 pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center">
+
+                <div class="w-full lg:w-8/12 section-container-spacer">
+                    <div class="text-center space-y-6 px-4">
+                        <div class="section-container-spacer text-center" >
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-6">|     02  :  Works     |</h1>
+          </div>
+
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            I am currently working as an <b class="font-semibold text-indigo-700">Employer Specialist at
+                                S.U.C.C.E.S.S,</b> where I facilitate employer connection activities and assist clients
+                            in securing employment opportunities across various industries in Canada.
+
+                            <br><br>Previously, I worked as an <b class="font-semibold text-indigo-700">Executive
+                                Assistant at McKinsey & Company,</b> where I developed and honed my skills in managing
+                            multiple calendars, coordinating travel logistics, and facilitating important meetings. During
+                            my time at McKinsey, I focused on refining my <b class="font-semibold">time management,
+                                corporate work ethics, and problem-solving skills.</b> This experience was pivotal in
+                            strengthening my ability to work under pressure while maintaining a high level of efficiency.
+
+                            <br><br>I have worked with <b class="font-semibold text-indigo-700">Python for the past 5
+                                years</b> mainly on backend development, but I have practiced in <b
+                                class="font-semibold">Frontend technologies</b> like <b class="font-semibold">HTML, CSS,
+                                and Javascript, React</b> on the side to be fully equipped with the current market.
+                            <br>While my work in <b class="font-semibold">Majorel as an outsource customer support for
+                                Microsoft Azure</b> I have developed a fondness to the areas of cloud computing and
+                            participated in three Microsoft based certifications which I will link below.
+                        </p>
+                    </div>
+                    <div class="text-center mt-12">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Professional CV</h3>
+                        <a href="/static/assets/Bereketeab-cv.pdf"
+                            class="bg-indigo-600 text-white font-medium py-3 px-8 rounded-lg hover:bg-indigo-700 transition duration-300 shadow-lg inline-block">
+                            Open PDF file
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1. Carousel 1: Automation and Game Projects -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 border-l-4 border-emerald-500 pl-3">Automation &
+                    Development Projects</h2>
+                <!-- Swiper Container -->
+                <div id="projects-carousel" class="swiper">
+                    <!-- Wrapper -->
+                    <div class="swiper-wrapper">
+
+                        <!-- Slide 1: Imposter Game -->
+                        <div class="swiper-slide p-2">
+                            <div
+                                class="bg-white p-6 rounded-xl h-full card-shadow border border-emerald-100 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-emerald-700 mb-2">The Imposter Game (Web App)
+                                    </h3>
+                                    <h1 class="text-3xl font-semibold text-gray-800 mb-4 border-b pb-2">
+                                                        Multiplayer game with Streamlit & QR Code Role Reveal
+                                                    </h1>
+                                    <!-- First Paragraph -->
+                                                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                                                        This project is a <strong class="text-indigo-600">local-multiplayer social deduction game</strong> (similar to Spyfall or Among Us) built on the <strong class="font-semibold">Streamlit</strong> framework.
+                                                    </p>
+
+                                                    <!-- Second Paragraph - Core Challenge & Solution -->
+                                                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                                                        The core challenge for this type of game is distributing secret roles to players who are all looking at the same screen. My solution was to build a single-page application that dynamically generates a unique QR code for each player. Players scan their code on the shared screen with their personal phones to <strong class="font-semibold">instantly and privately receive their role</strong>—either the "Secret Word" or the "Imposter," who receives only the general topic.
+                                                    </p>
+
+
+                                </div>
+                                <a href="https://imposter-game.streamlit.app/" target="_blank"
+                                    class="mt-4 inline-flex items-center px-4 py-2 bg-emerald-600 text-white font-medium rounded-lg hover:bg-emerald-700 transition duration-300 text-sm">
+                                    Play the Game!
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2: Power Automate Project -->
+                        <div class="swiper-slide p-2">
+                            <div
+                                class="bg-white p-6 rounded-xl h-full card-shadow border border-emerald-100 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-emerald-700 mb-2">Power automate tool- Free calendar slots finder</h3>
+                                    <p>
+                                                Below is an example of one of the many tools I developed to automate tasks and save time for the assistant service line.
+                                                This particular automation tool for Outlook fetches all available free time slots from a user’s calendar. I created it to help streamline the process of sharing availability, especially for those who manage and schedule frequent meetings.
+
+                                                <br><br>The tool dynamically adjusts for time zones and preferred meeting durations. During its development, I conducted a testing phase, which highlighted how valuable user feedback is in identifying and resolving usability issues.
+
+                                                <br><br>I hope this tool will be widely adopted and contribute to making meeting scheduling more efficient for teams and organizations.
+                                  </p>
+                                </div>
+                                <a href="./static/assets/Findfreeslots_20231025121938.zip" target="_blank"
+                                    class="mt-4 inline-flex items-center px-4 py-2 bg-emerald-600 text-white font-medium rounded-lg hover:bg-emerald-700 transition duration-300 text-sm">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3: Web Scraper -->
+                        <div class="swiper-slide p-2">
+                            <div
+                                class="bg-white p-6 rounded-xl h-full card-shadow border border-emerald-100 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-emerald-700 mb-2">Web scrapper</h3>
+                                   As part of my coursework, I developed a personal project a web scraper, which you can view on my <a href="https://github.com/Bek-dev-135/Learning-Pythn/blob/main/webscraper.py">GitHub repository</a>.
+                                                The scraper is designed to fetch news articles from the Hacker News website and collect only items with more than 500 votes.
+                                                This project demonstrates how to interact with an API to gather specific, high-value data efficiently.
+
+                                                <br><br>I have also created a Twitter API bot capable of retrieving various types of account-related data. For example, it can track follower counts (which can be compiled into a list for marketing purposes), search tweets containing specific hashtags, and more.
+                                                You can also find the code for this Twitter bot in the same <a href="https://github.com/Bek-dev-135/Learning-Pythn/tree/main/ztmtwitter">GitHub repository</a>.
+                                </div>
+                                <a href="https://github.com/Bek-dev-135/Learning-Pythn/blob/main/webscraper.py"
+                                    target="_blank"
+                                    class="mt-4 inline-flex items-center px-4 py-2 bg-emerald-600 text-white font-medium rounded-lg hover:bg-emerald-700 transition duration-300 text-sm">
+                                    See Repository
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination mt-6"></div>
+                </div>
+            </section>
+
+            <!-- 2. Carousel 2: Microsoft Certifications (UPDATED CONTENT) -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 border-l-4 border-sky-500 pl-3">Microsoft Professional
+                    Certifications</h2>
+                <!-- Swiper Container -->
+                <div id="certs-carousel" class="swiper">
+                    <!-- Wrapper -->
+                    <div class="swiper-wrapper">
+
+                        <!-- Cert 1: Azure Fundamentals (AZ-900) -->
+                        <div class="swiper-slide p-2">
+                            <div
+                                class="bg-white p-6 rounded-xl h-full card-shadow border border-sky-100 flex flex-col justify-between">
+                                <div class="space-y-4">
+                                    <!-- Image Div Added -->
+                                    <div class="flex justify-center items-center">
+                                        <img src="https://placehold.co/150x150/0078D4/ffffff?text=AZ-900"
+                                            alt="Microsoft Certified: Azure Fundamentals Badge"
+                                            class="w-24 h-24 rounded-lg object-contain" />
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-sky-700 mb-1">
+                                            Microsoft Certified: Azure Fundamentals
+                                        </h3>
+                                        <h4 class="text-sm font-medium text-gray-500 mb-3">Issued by <a
+                                                href="https://www.credly.com/org/microsoft-certification"
+                                                target="_blank" class="text-sky-600 hover:text-sky-800">Microsoft</a>
+                                        </h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Earners of the Azure Fundamentals certification have demonstrated foundational
+                                            level knowledge of cloud services and how those services are provided with
+                                            Microsoft Azure.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="https://www.credly.com/badges/9de23c50-a147-4290-97fb-c929cc52bda1/public_url"
+                                    target="_blank"
+                                    class="mt-4 inline-flex items-center justify-center px-4 py-2 bg-sky-600 text-white font-medium rounded-lg hover:bg-sky-700 transition duration-300 text-sm">
+                                    Verify Credential (AZ-900)
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Cert 2: Security, Compliance, and Identity Fundamentals (SC-900) -->
+                        <div class="swiper-slide p-2">
+                            <div
+                                class="bg-white p-6 rounded-xl h-full card-shadow border border-sky-100 flex flex-col justify-between">
+                                <div class="space-y-4">
+                                    <!-- Image Div Added -->
+                                    <div class="flex justify-center items-center">
+                                        <img src="https://placehold.co/150x150/0078D4/ffffff?text=SC-900"
+                                            alt="Microsoft Certified: Security, Compliance, and Identity Fundamentals Badge"
+                                            class="w-24 h-24 rounded-lg object-contain" />
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-sky-700 mb-1">
+                                            Microsoft Certified: Security, Compliance, and Identity Fundamentals
+                                        </h3>
+                                        <h4 class="text-sm font-medium text-gray-500 mb-3">Issued by <a
+                                                href="https://www.credly.com/org/microsoft-certification"
+                                                target="_blank" class="text-sky-600 hover:text-sky-800">Microsoft</a>
+                                        </h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Earners of the Security, Compliance, and Identity Fundamentals demonstrate a
+                                            functional understanding of security, compliance, and identity (SCI) across
+                                            cloud-based and related Microsoft services.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="https://www.credly.com/badges/f1b8f0d9-4627-4253-87d1-9add4f0c8ea1/public_url"
+                                    target="_blank"
+                                    class="mt-4 inline-flex items-center justify-center px-4 py-2 bg-sky-600 text-white font-medium rounded-lg hover:bg-sky-700 transition duration-300 text-sm">
+                                    Verify Credential (SC-900)
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Cert 3: Azure AI Fundamentals (AI-900) -->
+                        <div class="swiper-slide p-2">
+                            <div
+                                class="bg-white p-6 rounded-xl h-full card-shadow border border-sky-100 flex flex-col justify-between">
+                                <div class="space-y-4">
+                                    <!-- Image Div Added -->
+                                    <div class="flex justify-center items-center">
+                                        <img src="https://placehold.co/150x150/0078D4/ffffff?text=AI-900"
+                                            alt="Microsoft Certified: Azure AI Fundamentals Badge"
+                                            class="w-24 h-24 rounded-lg object-contain" />
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-sky-700 mb-1">
+                                            Microsoft Certified: Azure AI Fundamentals
+                                        </h3>
+                                        <h4 class="text-sm font-medium text-gray-500 mb-3">Issued by <a
+                                                href="https://www.credly.com/org/microsoft-certification"
+                                                target="_blank" class="text-sky-600 hover:text-sky-800">Microsoft</a>
+                                        </h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Earners of the Azure AI Fundamentals certification have demonstrated
+                                            foundational knowledge of machine learning (ML) and artificial intelligence
+                                            (AI) concepts and related Microsoft Azure services.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="https://www.credly.com/badges/0fa1518b-b530-455b-be8a-85cc422666c8/public_url"
+                                    target="_blank"
+                                    class="mt-4 inline-flex items-center justify-center px-4 py-2 bg-sky-600 text-white font-medium rounded-lg hover:bg-sky-700 transition duration-300 text-sm">
+                                    Verify Credential (AI-900)
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination mt-6"></div>
+                </div>
+            </section>
+
+
+            <!-- 3. Standalone Component: One Password Checker -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-3">Security Utility</h2>
+                <div id="password-checker" class="bg-white p-6 rounded-xl card-shadow border border-indigo-100">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Password Checker</h3>
+                    <p>
+                             This Python code is designed to check whether a password has been compromised by querying a well-known data breach database (such as the one used in hackathons or by Have I Been Pwned).
+                             To protect user privacy, the script does not send the full password to the website. Instead, it generates a hashed version of the password and only sends the first few characters of the hash.
+                             The website then returns a list of hashes that match that prefix. The script downloads this list and compares it locally with the full hash of the user's password.
+
+                             <br><br>This method ensures that the full password is never exposed to any external site, maintaining security while still allowing users to check if their credentials have been compromised.
+
+                    </p>
+                    <a href="https://github.com/Bek-dev-135/Learning-Pythn/blob/main/passwordchecker.py"
+                        target="_blank"
+                        class="inline-flex items-center px-4 py-2 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition duration-300">
+                        View Live Project
+                        <!-- Icon for link -->
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
                     </a>
-                    <div class="card-container">
-                      <h4>004/006</h4>
-                      <h3>Web scrapper</h3>
-                      <p>I have worked on a personal project as a part of my course to make this web scrapper <a href="https://github.com/Bek-dev-135/Learning-Pythn.git">(link to github)</a> 
-                      For now it is set to fetch all the news on the Hacker news website and collect all items that have a vote greater than 500, demonstrating how we can work around the API for better data usage and getting vthe information we want exactly. Also another work I did with the Twitter's API was a bot that could be modeled to fetch different types of data about our account it could be the amount of followers we have(we can put it in a list and use it for markating), search for a specific workds in our tweets and l alot more. youu can also find this bot's code in the repositor <a href="https://github.com/Bek-dev-135/Learning-Pythn.git">(link to github)</a> /ztmtwitter.
-
-                    </p>
-                      <a href="./work.html" class="btn btn-default">Discover</a>
-                    </div>
-                  </div>
-                   <div class="col-sm-4">
-                      <a href="./work.html" class="black-image-project-hover">
-                        <img src="./static/assets/images/work01-hover.jpg" alt="Image" class="img-responsive">
-                      </a>
-                      <div class="card-container">
-                        <h4>005/006</h4>
-                        <h3>Password Checker
-                        </h3>
-                        <p>This python code fetches all compromised passwords from the well known hackaton webpage but since we dont want to put our actual password on there and search it with the risk of sending our password to them what we could do is give a little portion of the Hash version of our password and when the website gives us a lit of passwords that match those first few strings we scrape that lit to our device and try to match the rest of our passwords from whats on that list now we can rest assured we didn't give our full password to an unknown website and we can caluculate from the data that it gives us base on the bits of passwored we offered it. The code for this could be found here <a href="https://github.com/Bek-dev-135/Learning-Pythn.git">(link to github)</a> file name passwordchecker.py
-                          </p>
-                        <a href="./work.html" class="btn btn-default">Discover</a>
-                      </div>
-                    </div>
-                    
-                    <div class="col-sm-4">
-                      <a href="./work.html" class="black-image-project-hover">
-                        <img src="./static/assets/images/work03-hover.jpg" alt="Image" class="img-responsive">
-                      </a>
-                      <div class="card-container">
-                        <h4>006/006</h4>
-                        <h3></h3>
-                        <p></p>
-                        <a href="./work.html" class="btn btn-default">Discover</a>
-                      </div>
-                    </div>
-                    
                 </div>
-                <!--/row-->
-            </div>
-            
-            <!--/item-->
+            </section>
+
         </div>
-        <!--/carousel-inner--> 
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-     </div>
-
-
-
-    <!--/myCarousel-->
     </div>
 
 
+    <!-- Load Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper Carousels
+        document.addEventListener('DOMContentLoaded', () => {
 
-    </div>
-  </div>
-</div>
+            // Configuration for both carousels
+            const swiperConfig = {
+                loop: false,
+                spaceBetween: 24, // Tailwind spacing equivalent
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                // Responsive breakpoints
+                breakpoints: {
+                    // Mobile (0px and up)
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    // Tablet (640px and up)
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    // Desktop (1024px and up)
+                    1024: {
+                        slidesPerView: 3,
+                    }
+                }
+            };
 
+            // 1. Initialize Projects Carousel (Imposter Game, Power Automate, Web Scraper)
+            const projectsSwiper = new Swiper('#projects-carousel', swiperConfig);
 
-<footer class="footer-container text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p>© UNTITLED | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
-      </div>
-    </div>
-  </div>
-</footer>
+            // 2. Initialize Certifications Carousel (3 Microsoft Certifications)
+            const certsSwiper = new Swiper('#certs-carousel', swiperConfig);
 
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-     navActivePage();
-  });
-</script>
-
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
-
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-XXXXX-X', 'auto');
-  ga('send', 'pageview');
-</script>
-
---> <script type="text/javascript" src="./static/main.70a66962.js"></script></body>
+            console.log("Swiper carousels initialized.");
+        });
+    </script>
+</body>
 
 </html>
