@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -8,26 +7,275 @@
   <meta content="description" name="description">
   <meta name="google" content="notranslate" />
   <meta content="Mashup templates have been developped by Orson.io team" name="author">
-
-  <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-  
+
   <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
   <link href="./static/assets/globe.ico" rel="icon">
 
-  <title>Title page</title>  
+  <title>Certifications</title>
+  <link href="./static/main.3f6952e4.css" rel="stylesheet">
 
-<link href="./static/main.3f6952e4.css" rel="stylesheet"></head>
+  <!-- Certifications Styles (Responsive) -->
+
+  <style>
+    #certifications {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #certifications h2 {
+      text-align: center;
+      color: #333;
+      margin-top: 0;
+    }
+    .grid-container-wrapper {
+      max-height: 70vh; /* Better than fixed px */
+      overflow-y: auto;
+      padding: 10px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .cert-item {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .cert-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 10px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+    .cert-title {
+      font-weight: bold;
+      font-size: 1.05em;
+      color: #222;
+      margin: 8px 0 4px;
+    }
+    .cert-details {
+      color: #555;
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
+
+    /* Tablet */
+    @media (max-width: 992px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+      #certifications {
+        margin: 0 10px;
+        padding: 15px;
+      }
+    }
+
+  #certifications {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+  }
+
+  #certifications::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    border-radius: 0 0 4px 4px;
+  }
+
+  #certifications h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 2.1rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+
+  #certifications h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    border-radius: 2px;
+  }
+
+  .grid-container-wrapper {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #8f94fb #e9ecef;
+  }
+
+  /* Custom scrollbar for WebKit */
+  .grid-container-wrapper::-webkit-scrollbar {
+    width: 8px;
+  }
+  .grid-container-wrapper::-webkit-scrollbar-track {
+    background: #f1f3f5;
+    border-radius: 4px;
+  }
+  .grid-container-wrapper::-webkit-scrollbar-thumb {
+    background: linear-gradient(#8f94fb, #4e54c8);
+    border-radius: 4px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .cert-item {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid #edf2f7;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cert-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+
+  .cert-item:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(78, 84, 200, 0.18);
+    z-index: 2;
+  }
+
+  .cert-item:hover::before {
+    transform: scaleY(1);
+  }
+
+  .cert-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .cert-item:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(78, 84, 200, 0.25);
+  }
+
+  .cert-title {
+    font-weight: 700;
+    font-size: 1.15em;
+    color: #2d3748;
+    margin: 12px 0 8px;
+    line-height: 1.3;
+  }
+
+  .cert-details {
+    color: #718096;
+    font-size: 0.92em;
+    line-height: 1.5;
+  }
+
+  /* Tablet */
+  @media (max-width: 992px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #certifications h2 {
+      font-size: 1.8rem;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+    #certifications {
+      margin: 0 12px;
+      padding: 20px;
+      border-radius: 14px;
+    }
+    #certifications h2 {
+      font-size: 1.6rem;
+    }
+    .cert-item {
+      padding: 18px;
+    }
+  }
+
+  /* Extra small */
+  @media (max-width: 480px) {
+    #certifications h2::after {
+      width: 40px;
+    }
+    .cert-title {
+      font-size: 1.05em;
+    }
+  }
+
+  </style>
+</head>
 
 <body class="">
-<div id="site-border-left"></div>
-<div id="site-border-right"></div>
-<div id="site-border-top"></div>
-<div id="site-border-bottom"></div>
-<!-- Add your content of header -->
-<header>
-  <nav class="navbar  navbar-fixed-top navbar-default">
-    <div class="container">
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-fixed-top navbar-default">
+      <div class="container">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -35,101 +283,125 @@
           <span class="icon-bar"></span>
         </button>
 
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-          <li><a href="./index.html" title="">01 : Home</a></li>
-          <li><a href="./works.html" title="">02 : Works</a></li>
-          <li><a href="./about.html" title="">03 : About me</a></li>
-          <li><a href="./contact.html" title="">04 : Contact</a></li>
-          
-        </ul>
-
-
-          <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
-            <li><a href="./index.html" title="" class="active">001</a></li>
-            <li><a href="./index.html" title="">002</a></li>
-            <li><a href="./index.html" title="">003</a></li>
-            <li><a href="./index.html" title="">004</a></li>
-            <li><a href="./index.html" title="">005</a></li>
-            <li><a href="./index.html" title="">006</a></li>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./index.html" title="">01 : Home</a></li>
+            <li><a href="./works.html" title="">02 : Works</a></li>
+            <li><a href="./work.html" title="">03 : Certifications</a></li>
+            <li><a href="./about.html" title="">04 : About me</a></li>
+            <li><a href="./contact.html" title="">05 : Contact</a></li>
           </ul>
-
-
-      </div> 
-    </div>
-  </nav>
-</header>
-<div class="section-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <img src=".static/assets/images/work001-01.jpg" class="img-responsive" alt="">
-        <div class="card-container">
-          <div class="text-center">
-            <h1 class="h2">001 : Fringilla sit amet</h1>
-          </div>
-          <p>Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies, nisl nunc pulvinar ligula, id sodales arcu sapien in nisi. Quisque libero enim, mattis non augue posuere, venenatis dapibus urna.</p>
-
-          <blockquote>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
-            <small class="pull-right">Irina Martin</small>
-          </blockquote>
         </div>
       </div>
+    </nav>
+  </header>
 
-      
-      
-      <div class="col-md-8 col-md-offset-2 section-container-spacer">
+  <!-- Main Content -->
+  <div class="section-container">
+    <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/work001-02.jpg" class="img-responsive" alt="">
-            <p>Menphis skyline</p>
+        <div class="col-xs-12">
+          <div class="section-container-spacer text-center" >
+            <h1 class="h2">03 : Certifications & Accreditations</h1>
           </div>
-          <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/work001-03.jpg" class="img-responsive" alt="">
-            <p>Menphis skyline</p>
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="certifications">
+
+            <div class="grid-container-wrapper">
+              <div class="grid-container">
+
+                <!-- Certificate 1 -->
+                <div class="cert-item">
+                  <div class="cert-title">Bachelor of Science in Computer Science</div>
+                  <div class="cert-details">Issued: Mar 2024 (WSB University, Dąbrowa Górnicza, Poland)</div>
+                  <img src="./static/assets/certi/BSc_Certificate.png" alt="Bachelor of Science in Computer Science">
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="cert-item">
+                  <div class="cert-title">Mental Health First Aid Certificate</div>
+                  <div class="cert-details">Issued: Apr 2025<br>Skills: Participants learn skills for providing initial help to individuals experiencing mental health problems related to substance use, depression, anxiety, trauma, and psychosis.</div>
+                  <img src="./static/assets/certi/MHFA.png" alt="Mental Health First Aid">
+                </div>
+
+                <!-- Add all your other certificates here (same structure) -->
+                <div class="cert-item">
+                  <div class="cert-title">BC Labour Market 101: Job Developers</div>
+                  <div class="cert-details">Issued: Feb 2025</div>
+                  <img src="./static/assets/certi/LMI_Certificate.png" alt="BC Labour Market 101 Certificate">
+                </div>
+                <div class="cert-item">
+                  <div class="cert-title">GBA+ (Government of Canada)</div>
+                  <div class="cert-details">Issued: Jan 2025</div>
+                  <img src="./static/assets/certi/GBA_certificate.png" alt="GBA+ Certificate">
+                </div>
+                <div class="cert-item">
+                  <div class="cert-title">FAST: IT and Data Services Certificate of Completion</div>
+                  <div class="cert-details">Issued: Nov 2024 (Immigrant Employment Council of BC)<br>Skills: IT Management</div>
+                  <img src="./static/assets/certi/Certificate.png" alt="FAST IT and Data Services Certificate">
+                </div>
+                <div class="cert-item">
+                  <div class="cert-title">Youth Employment Connect - Training for Jobs Program</div>
+                  <div class="cert-details">Issued: Oct 2024 (S.U.C.C.E.S.S)<br>Skills: Job Coaching, Job Search Strategies, Corporate Communications, Workplace Safety, Equality & Diversity</div>
+                  <img src="./static/assets/certi/YEC_certificate.png" alt="Youth Employment Connect Certificate">
+                </div>
+                <div class="cert-item">
+                  <div class="cert-title">Basic First Aid (Emergency)</div>
+                  <div class="cert-details">Issued: Sep 2024 (St. John Ambulance Canada)<br>Credential ID: 0106000790<br>Skills: First Aid, Level A CPR/AED</div>
+                  <img src="./static/assets/certi/FirstAid_certi.png" alt="Basic First Aid Certificate">
+                </div>
+                <div class="cert-item">
+                  <div class="cert-title">Certificate of Job Readiness</div>
+                  <div class="cert-details">Issued: Sep 2024 (Immigrant Employment Council of BC)</div>
+                  <img src="./static/assets/certi/ACEND_Certi.png" alt="Certificate of Job Readiness">
+                </div>
+                <div class="cert-item">
+                  <div class="cert-title">SuperHost® Foundations of Service Quality™</div>
+                  <div class="cert-details">Issued: Sep 2024 (go2HR - the resource for people in tourism)<br>Skills: Customer Experience, Customer Service, Problem Solving, Communication</div>
+                  <img src="./static/assets/certi/SH_certi.png" alt="SuperHost Certificate">
+                </div>
+                <div class="cert-item">
+                  <div class="cert-title">Microsoft Certified: Azure Fundamentals (AZ-900)</div>
+                  <div class="cert-details">Issued: Jan 2022</div>
+                  <img src="./static/assets/azure-fundamentals-600x600.png" alt="Azure Fundamentals Certificate">
+                </div>
+                <div class="cert-item">
+                  <div class="cert-title">Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)</div>
+                  <div class="cert-details">Issued: Jan 2022</div>
+                  <img src="./static/assets/security-compliance-and-identity-fundamentals-600x600.png" alt="SC-900 Certificate">
+                </div>
+                <div class="cert-item">
+                  <div class="cert-title">Microsoft Certified: Azure AI Fundamentals (AI-900)</div>
+                  <div class="cert-details">Issued: Jan 2022</div>
+                  <img src="./static/assets/azure-ai-fundamentals-600x600.png" alt="Azure AI Fundamentals Certificate">
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="col-xs-12">
-        <img src="./static/assets/images/work001-04.jpg" class="img-responsive" alt="">
-      </div>
-
     </div>
   </div>
-</div>
 
-
-<footer class="footer-container text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p>© UNTITLED | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
+  <!-- Footer -->
+  <footer class="footer-container text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <!-- Your footer content -->
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-     navActivePage();
-  });
-</script>
-
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
-
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-XXXXX-X', 'auto');
-  ga('send', 'pageview');
-</script>
-
---> <script type="text/javascript" src="./static/main.70a66962.js"></script></body>
-
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Assuming navActivePage() is defined in your main.js
+      if (typeof navActivePage === 'function') navActivePage();
+    });
+  </script>
+  <script src="./static/main.70a66962.js"></script>
+</body>
 </html>
